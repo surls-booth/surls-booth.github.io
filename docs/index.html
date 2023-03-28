@@ -10,16 +10,34 @@
 <body>
 
 <style>
+*{
+  border: thin red solid;
+}
+
   body{
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
   }
 .banner-image{
   width: 128px;
   height: 128px;
   object-fit: cover;
   border-radius: 128px;
+  display: flex;
+  justify-content: center;
   } 
+
+.banner{
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 128px;
+  display: flex;
+  justify-content: center;
+  }
+
 .thumbnail{
   width: 48px;
   height: 48px;
@@ -27,8 +45,49 @@
   object-fit: cover;
 }
 
+body {
+  background-color: #004643;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  color: #fffffe;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #fffffe;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+.link {
+  background-color: #f9bc60;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.link a {
+  color: #001e1d;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.items{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 640px;
+  flex-grow: 1;
+}
+
 </style>
 
+<div class="items">
 
 <div class="banner">
   <img src="thumbnails/headshot_small.jpeg" alt="Matt Surls headshot" class="banner-image">
@@ -78,6 +137,8 @@ Matt Surls
 
   <a target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">A
     Life-Saving Checklist — The New Yorker</a>
+</div>
+
 </div>
 
 </body>
